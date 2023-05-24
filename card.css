@@ -1,0 +1,67 @@
+body{
+	padding: 10em;
+	
+}
+.producto{
+	max-width: 100%;
+	display: flex;
+	flex-flow: column;
+	border-radius: 6px;
+	box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.3);
+	background-color: rgba(255, 255, 255) ;
+	cursor: pointer;
+	transition-property: box-shadow;
+	transition-duration: 0.3s;
+
+}
+
+.producto:hover{
+	box-shadow: 0 0 1.5em rgba(0, 0, 0, 1.0);
+	transform: translateY(10px);
+}
+.producto > img{
+	width: 100%;
+	object-fit: cover;	
+}
+.producto .informacion {
+	padding: 15px;
+	text-align: center;
+}
+.informacion{
+	border-top: 1px solid rgba(230, 230, 230);
+	padding: 1em;
+	display: flexflex;
+	flex-flow: column;
+	 text-align: center;
+	 padding: 15px;
+}
+.descripcion h3{
+	font-weight: 400;
+  margin-bottom: 15px;
+}
+.talla{
+	line-height: 1.5;
+  color: #c7c7c7;
+
+}
+ .precio{
+	font-size: 1.5em;
+}
+.informacion a{
+  
+text-decoration: none;
+  display: inline-block;
+  padding: 15px;
+  width: 60%;
+  margin-top: 14px;
+  color: #8000ff;
+  border: 1px solid #8000ff;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+
+.informacion a:hover{
+	background: #8000ff;
+  color: #fff;
+
+}
